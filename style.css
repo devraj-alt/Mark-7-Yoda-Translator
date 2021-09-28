@@ -1,78 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Tourney:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital@1&display=swap");
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 .responsive {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    float: left;
+  width: 80%;
+  max-width: 250px;
+  height: auto;
+  float: left;
+  margin: 2rem;
 }
 
 .heading {
-    text-align: center;
-    font-size: x-large;
-    font-family: Tourney;
-    width: 100%;
-    height: auto;
-    color: #111827;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+  text-align: center;
+  font-size: x-large;
+  font-family: Tourney;
+  max-width: 500px;
+  margin: auto;
+  height: auto;
+  color: #111827;
+  padding: 0.5rem;
 }
 
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 10px #FDF2F8,
-            0 0 20px #E5E7EB,
-            0 0 30px #D1D5DB,
-            0 0 40px #9CA3AF,
-            0 0 50px #6B7280,
-            0 0 60px #111827,
-            0 0 70px #111827;
-    }
-
-    to {
-        text-shadow: 0 0 20px #FEF2F2,
-            0 0 30px #818CF8,
-            0 0 40px #6366F1,
-            0 0 50px #4F46E5,
-            0 0 60px #4338CA,
-            0 0 70px #3730A3,
-            0 0 80px #312E81;
-    }
+.header-text {
+  margin: 10px auto;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .text-area {
-    padding: 2.5rem;
-    width: 30rem;
-    height: auto;
-    margin: 2rem;
-    font-family: fantasy;
-    font-size: 15PX;
+  padding: 2.5rem;
+  width: 30%;
+  height: auto;
+  margin: 3rem;
+  font-family: fantasy;
+  font-size: 15px;
 }
 
 #btn-translate {
-    background-color: #10B981;
-    border: #064E3B;
-    border-radius: 5mm;
-    color: #F9FAFB;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 15px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    cursor: pointer;
+  background-color: #10b981;
+  border: #064e3b;
+  border-radius: 5mm;
+  color: #f9fafb;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin: 5px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
 }
 
 #btn-translate:hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .responsive {
+    display: block;
+    margin: auto;
+    float: none;
+  }
+  .text-area {
+    width: 40%;
+  }
 }
