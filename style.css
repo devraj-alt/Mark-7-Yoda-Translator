@@ -67,5 +67,6 @@ body {
   }
   .text-area {
     width: 40%;
+    padding: 1rem;
   }
 }
